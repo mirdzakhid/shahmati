@@ -63,4 +63,4 @@ else:
             if diff > 0:
                 print("Первый ход Ферзя:", (k + diff, n))
             else:
-                print("Первый ход Ферзя:", (k, n + abs(diff))
+                print("Первый ход Ферзя:", (k, n + abs(diff)))
