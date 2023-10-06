@@ -43,3 +43,24 @@ if is_threatened(k, l, m, n, figure):
     print(figure.capitalize(), "угрожает полю", (m, n), ".")
 else:
     print(figure.capitalize(), "не угрожает полю", (m, n), ".")
+
+if is_possible_move(k, l, m, n, figure):
+    print("Можно попасть на поле", (m, n), "одним ходом", figure.capitalize())
+else:
+  if figure == "ladya":
+        if k != m and l != n:
+            print("Первый ход ладьи:", (k, n))
+    elif figure == "slon":
+        if abs(k - m) != abs(l - n):
+            diff = abs(k - m) - abs(l - n)
+            if diff > 0:
+                print("Первый ход Слона:", (k + diff, n))
+            else:
+                print("Первый ход Слона:", (k, n + abs(diff)))
+    elif figure == "ferz":
+        if abs(k - m) != abs(l - n):
+            diff = abs(k - m) - abs(l - n)
+            if diff > 0:
+                print("Первый ход Ферзя:", (k + diff, n))
+            else:
+                print("Первый ход Ферзя:", (k, n + abs(diff))
