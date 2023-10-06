@@ -18,3 +18,12 @@ def is_threatened(k, l, m, n, figure):
         if abs(k - m) == 1 and abs(l - n) == 2 or abs(k - m) == 2 and abs(l - n) == 1:
             return True
     return False
+
+def is_possible_move(k, l, m, n, figure):
+    if figure == "ferz" or figure == "ladya" or figure == "slon":
+        if k == m or l == n or abs(k - m) == abs(l - n):
+            return True
+    elif figure == "ladya" or figure == "slon":
+        if abs(k - m) == abs(l - n):
+            return True
+    return False
