@@ -47,7 +47,7 @@ else:
 if is_possible_move(k, l, m, n, figure):
     print("Можно попасть на поле", (m, n), "одним ходом", figure.capitalize())
 else:
-  if figure == "ladya":
+    if figure == "ladya":
         if k != m and l != n:
             print("Первый ход ладьи:", (k, n))
     elif figure == "slon":
