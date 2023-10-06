@@ -27,3 +27,9 @@ def is_possible_move(k, l, m, n, figure):
         if abs(k - m) == abs(l - n):
             return True
     return False
+
+k = int(input("Введите номер вертикали для первого поля (k): "))
+l = int(input("Введите номер горизонтали для первого поля (l): "))
+m = int(input("Введите номер вертикали для второго поля (m): "))
+n = int(input("Введите номер горизонтали для второго поля (n): "))
+figure = input("Введите название фигуры (ferz, ladya, slon, kony'): ")
