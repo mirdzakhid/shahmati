@@ -38,3 +38,8 @@ if is_same_color(k, l, m, n):
     print("Поля", (k, l), "и", (m, n), "являются полями одного цвета.")
 else:
     print("Поля", (k, l), "и", (m, n), "не являются полями одного цвета.")
+
+if is_threatened(k, l, m, n, figure):
+    print(figure.capitalize(), "угрожает полю", (m, n), ".")
+else:
+    print(figure.capitalize(), "не угрожает полю", (m, n), ".")
